@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "848215124719",
+    "project_id": "diuride252",
+    "storage_bucket": "diuride252.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:848215124719:android:77908b3202850b73b0491a",
+        "android_client_info": {
+          "package_name": "com.diu.ride.diu_ride"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGQ_Dvm-3qD0pFMfBJ9ctIIm4OF6Tjvy8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

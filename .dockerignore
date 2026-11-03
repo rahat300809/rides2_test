@@ -1,0 +1,17 @@
+.git
+.gitignore
+.dart_tool
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea
+.vscode
+build/
+android/
+ios/
+windows/
+macos/
+linux/
+test/
+emulator_run.log
+*.pyc
+__pycache__

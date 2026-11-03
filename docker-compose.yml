@@ -1,0 +1,23 @@
+services:
+  diu-ride:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: diu_ride_app
+    restart: unless-stopped
+    ports:
+      - "8001:8001"
+    environment:
+      - PORT=8001
+      - HOST=0.0.0.0
+      - PYTHONUNBUFFERED=1
+    volumes:
+      # Persist SQLite DB, active rides cache, and historical trips CSV across container rebuilds
+      - ./server/rides.db:/app/server/rides.db
+      - ./server/completed_trips.csv:/app/server/completed_trips.csv
+      - ./server/active_rides_data.json:/app/server/active_rides_data.json
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://127.0.0.1:8001/ride/health"]
+      interval: 20s
+      timeout: 5s
+      retries: 3

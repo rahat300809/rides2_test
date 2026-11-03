@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "title": "DIU Ride - Live Active Posted Rides",
+    "description": "Real-time persistent repository of currently active, non-expired campus rides with available seats. Read by DIU Ride AI Companion.",
+    "last_synced_at": "2026-11-04 12:11:52 AM",
+    "total_active_rides": 0,
+    "auto_removal_rules": {
+      "on_completed": "Automatically removed when trip is finished.",
+      "on_fully_booked": "Automatically removed when available_seats reaches 0.",
+      "on_expired": "Automatically removed when departure time passes by 10 minutes without extension.",
+      "on_cancelled": "Automatically removed when driver or admin cancels/deletes the ride."
+    }
+  },
+  "rides": []
+}
